@@ -1,2 +1,3 @@
 # Efficiency-Tools
-Central Hub to host tools to create efficiency around Blackrock SMA OPS
+Efficiency-Tools Central Hub, a centralized repository designed to streamline operations and enhance productivity across BlackRock SMA OPS. 
+
