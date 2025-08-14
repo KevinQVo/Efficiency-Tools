@@ -7,7 +7,6 @@ def file_explorer():
 
  if lines:
   result = f" {separator} ".join(lines)
-  st.markdown("**Joined Output:**")
   st.code(result, language="text")
   input_count = len(lines)
   st.markdown(f"**Input count:** {input_count}")
