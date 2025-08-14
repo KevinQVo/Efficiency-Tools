@@ -1,22 +1,18 @@
-import streamlit as st
-
-user_input = st.text_area("Enter z- tickers:", height=200)
-
-if user_input:
-    lines = user_input.strip().split('\n')
-    total_entries = len([line for line in lines if line.strip()]) 
-
-    cleaned = []
-    for line in lines:
-        line = line.strip()
-        if len(line) > 1:
-            cleaned.append(line[1:])
-        else:
-            st.warning(f"'{line}' is too short to clean")
-
-    if cleaned:
-        output_string = ' '.join(cleaned)
-
-        st.subheader("Output:")
-        st.code(output_string)
-        st.info(f" Total Entries: {total_entries} | Total Outputs: {len(cleaned)}")
+def zticker():
+    import streamlit as st
+    user_input = st.text_area("Enter z- tickers:", height=200)
+    if user_input:
+        lines = user_input.strip().split('\n')
+        total_entries = len([line for line in lines if line.strip()]) 
+        cleaned = []
+        for line in lines:
+            line = line.strip()
+            if len(line) > 1:
+                cleaned.append(line[1:])
+            else:
+                st.warning(f"'{line}' is too short to clean")
+        if cleaned:
+            output_string = ' '.join(cleaned)
+            st.subheader("Output:")
+            st.code(output_string)
+            st.info(f" Total Entries: {total_entries} | Total Outputs: {len(cleaned)}")
