@@ -7,3 +7,6 @@ st.title("SMA OPS TOOLS")
 
 selection = st.selectbox("Choose Tool Type", options)
 
+if selection == "Z-Ticker Cleaner":
+  
+
