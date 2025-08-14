@@ -10,7 +10,5 @@ def file_explorer():
   result = f" {separator} ".join(lines)
   st.markdown("**Joined Output:**")
   st.code(result, language="text")
- else:
-  st.info("Start typing to see the output...")
 
   
