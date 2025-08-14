@@ -1,5 +1,6 @@
 
 def file_explorer(): 
+  import streamlit as st
   st.title("Join Inputs with AND/OR")
   user_input = st.text_area("Enter values (one per line):")
   separator = st.selectbox("Choose separator:", ["AND", "OR"])
