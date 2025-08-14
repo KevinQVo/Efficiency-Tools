@@ -8,6 +8,7 @@ def file_explorer():
   lines = user_input.split("\n")
   total_entries = len(lines)
   st.markdown(f"**Total entries (including blanks):** {total_entries}")
+  
   cleaned = []
   for line in lines:
    line = line.strip()
@@ -15,10 +16,10 @@ def file_explorer():
     cleaned.append(line)
    else:
     st.warning("Blank or whitespace-only line detected and ignored.")
-    if cleaned:
-     result = f" {separator} ".join(cleaned)
-     st.subheader("Joined Output:")
-     st.code(result, language="text")
-     st.info(f"Valid entries joined: {len(cleaned)}")
-    else:
-     st.info("No valid input lines to process."
+  if cleaned:
+   result = f" {separator} ".join(cleaned)
+   st.subheader("Joined Output:")
+   st.code(result, language="text")
+   st.info(f"Valid entries joined: {len(cleaned)}")
+  else:
+   st.info("No valid input lines to process."
