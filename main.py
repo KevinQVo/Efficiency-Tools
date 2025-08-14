@@ -1,3 +1,3 @@
 import streamlit as st
-import options
+from options import options
 import zTicker
