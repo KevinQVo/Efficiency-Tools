@@ -1,8 +1,6 @@
 
 def file_explorer():
     import streamlit as st
-    st.title("Structured Input Joiner with Validation")
-    
     user_input = st.text_area("Enter values (one per line):", height=200)
     separator = st.selectbox("Choose a separator:", ["AND", "OR"])
     
