@@ -7,7 +7,6 @@ def file_explorer():
     if user_input:
         lines = user_input.split("\n")
         total_entries = len(lines)
-        st.markdown(f"**Total entries (including blanks):** {total_entries}")
         
         cleaned = []
         for line in lines:
