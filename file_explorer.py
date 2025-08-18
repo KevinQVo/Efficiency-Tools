@@ -20,6 +20,6 @@ def file_explorer():
             result = f" {separator} ".join(cleaned)
             st.subheader("Joined Output:")
             st.code(result, language="text")
-            st.info(f"Valid entries joined: {len(cleaned)}")
+            st.info(f"Total Entries: {len(cleaned)}")
         else:
             st.info("No valid input lines to process.")
