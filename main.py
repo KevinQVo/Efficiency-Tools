@@ -1,7 +1,7 @@
 import streamlit as st
 from options import options
 from zTicker import *
-from file_explorer import *
+from file_explorer import file_explorer
 
 st.set_page_config(page_title="SMA OPS TOOLS")
 st.title("SMA OPS TOOLS")
