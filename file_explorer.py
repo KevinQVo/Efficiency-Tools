@@ -11,7 +11,7 @@ def file_explorer():
      cleaned = []
      for line in lines:
          line = line.strip()
-    if len(line) > 0:
+      if len(line) > 0:
         cleaned.append(line)
     else:
         st.warning("Blank or whitespace-only line detected and ignored.")
